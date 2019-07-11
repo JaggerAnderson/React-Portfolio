@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import PortfolioItem from './portfolio-item';   
+import PortfolioItem from './Portfolio-Item';   
 
 export default class PortfolioContainer extends Component {
     constructor() {
@@ -30,6 +30,8 @@ export default class PortfolioContainer extends Component {
         this.setState({
             data: response.data.portfolio_items
         })
+        console.log(this.state.data);
+        
       })
       .catch(error => {
         console.log(error);
@@ -65,6 +67,8 @@ export default class PortfolioContainer extends Component {
                 <button onClick={() => this.handleFilter('Enterprise')}>
                 Enterprise
                 </button>
+
+                {this.portfolioItems()}
             </div>
         );
     }

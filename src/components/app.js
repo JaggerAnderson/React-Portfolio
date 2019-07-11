@@ -6,8 +6,6 @@ import {
   Route
 } from "react-router-dom";
 
-
-import PortfolioContainer from './Portfolio/Portfolio-Container';
 import NavigationContainer from './Navigation/Navigation-Container';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -25,13 +23,12 @@ export default class App extends Component {
       <Router>
         <div>
       <NavigationContainer />
-
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about-me" component={About} />
-          <Route path="/Contact" component={Contact} />
-          <Route path="/Blog" component={Blog} />
-          <Route exact path="/Portfolio/:slug" component={PortfolioDetail} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/blog" component={Blog} />
+          <Route exact path="/portfolio/:slug" component={PortfolioDetail} />
           <Route component={NoMatch} />
         </Switch>
         </div>
