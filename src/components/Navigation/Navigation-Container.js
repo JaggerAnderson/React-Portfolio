@@ -11,22 +11,22 @@ export default class NavigationComponent extends Component {
             <div className="nav-wrapper">
                 <div className="left-side">
                     <div className="nav-link-wrapper">
-                        <NavLink exact to="/" activeClassName="Nav-Link-Active">
+                        <NavLink exact to="/" activeClassName="nav-link-active">
                             Home
                         </NavLink>
                             </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/about-me" activeClassName="Nav-Link-Active">
+                        <NavLink to="/about-me" activeClassName="nav-link-active">
                             About
                         </NavLink>
                             </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/Blog" activeClassName="Nav-Link-Active">
+                        <NavLink to="/Blog" activeClassName="nav-link-active">
                             Blog
                         </NavLink>
                             </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/Contact" activeClassName="Nav-Link-Active">
+                        <NavLink to="/Contact" activeClassName="nav-link-active">
                             Contact
                         </NavLink>
                             </div>
